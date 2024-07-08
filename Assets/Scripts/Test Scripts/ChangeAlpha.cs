@@ -19,5 +19,11 @@ public class ChangeAlpha : MonoBehaviour {
                 alpha += 0.1f;
             meshRenderer.material.color = new Color(color.r, color.g, color.b, alpha);
         }
+
+        if (Input.GetKeyDown(KeyCode.H)) {
+            if (alpha < 1f && alpha > 0f)
+                alpha -= 0.1f;
+            meshRenderer.material.color = new Color(color.r, color.g, color.b, alpha);
+        }
     }
 }

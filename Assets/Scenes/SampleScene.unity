@@ -1397,13 +1397,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103652429}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.78257436, y: 0.15126018, z: -0.119735375, w: -0.59191316}
+  m_LocalRotation: {x: 0.44640663, y: 0.6603161, z: -0.50321627, w: -0.33388206}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4844155873052985196}
-  m_LocalEulerAnglesHint: {x: -117.1, y: 53.557, z: -416.185}
+  m_LocalEulerAnglesHint: {x: -201.498, y: 73.093, z: -455.86}
 --- !u!114 &1103652431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2504,10 +2504,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1935510626}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2809d3d5d508ab48bed79a36415bb27, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d45621cadedb5543941a12b29649e91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alpha: 70
+  alpha: 0
+  timeUntilDirty: 300
+  isGettingCleaned: 0
 --- !u!1 &2106160438
 GameObject:
   m_ObjectHideFlags: 0
@@ -3252,6 +3254,7 @@ GameObject:
   - component: {fileID: 1944020183982917158}
   - component: {fileID: 5424700253958581617}
   - component: {fileID: 6410823623890259313}
+  - component: {fileID: 6410823623890259314}
   m_Layer: 0
   m_Name: Glass
   m_TagString: Untagged
@@ -3300,7 +3303,7 @@ Transform:
   m_GameObject: {fileID: 4160276132225202383}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 62.918724, z: -0.15804863}
+  m_LocalPosition: {x: 0.25, y: 62.918724, z: -0.15804863}
   m_LocalScale: {x: 1384.1466, y: 1384.1466, z: 26.646732}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3792,7 +3795,6 @@ Transform:
   - {fileID: 7597878532880057179}
   - {fileID: 1944020183982917158}
   - {fileID: 8813621252236155470}
-  - {fileID: 4844155873052985196}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3715628667960392207
@@ -4359,13 +4361,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4984962573749390876}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4298911, y: 0.5614223, z: 0.56141675, w: -0.4298952}
-  m_LocalPosition: {x: -0, y: 2.1295803, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0.0000028908253, y: 0.0000039041042, z: 0.7939671, w: -0.6079608}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0049620634}
+  m_LocalScale: {x: 0.6455652, y: 0.64556533, z: 0.34298268}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1103652430}
-  m_Father: {fileID: 3708826771533133409}
+  m_Father: {fileID: 7597878532880057179}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -465.115}
 --- !u!4 &4857549814973244314
 Transform:
@@ -5032,6 +5034,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6410823623890259314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620220458399626908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d45621cadedb5543941a12b29649e91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alpha: 0
+  timeUntilDirty: 300
+  isGettingCleaned: 0
 --- !u!1 &6433017115774958966
 GameObject:
   m_ObjectHideFlags: 0
@@ -5615,13 +5632,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4815916883398226105}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4298911, y: 0.5614223, z: 0.56141675, w: -0.4298952}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0.6828392, z: 0}
   m_LocalScale: {x: 154.90295, y: 154.90295, z: 291.55988}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4844155873052985196}
   m_Father: {fileID: 3708826771533133409}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -465.115}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!4 &7617369229117099921
 Transform:
   m_ObjectHideFlags: 0
